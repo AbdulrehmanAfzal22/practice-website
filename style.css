@@ -13,10 +13,17 @@
 }
 
 .navbar {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 75px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+
 
 .icon {
     width: 200px;
@@ -25,8 +32,8 @@
 }
 
 .logo {
- margin-top: 27px;
-   padding-left: 22px; color: rgb(255, 255, 255);
+ margin-top: 1px;
+   padding-left: -30px; color: rgb(255, 255, 255);
    font-size: xx-large;
 }
 
@@ -71,20 +78,17 @@ float: left;
   
 
 }
-.srch{
-background: transparent;
-font-family: 'Segoe UI',;
-width: 200px;
-height: 40px;
-border: 1px solid white;
-margin-top: 17px;
-color: white;
-float: left;
-padding: 10px;
-border-radius: 22px;
-text-decoration: white;
-
+.srch {
+    background: transparent;
+    font-family: 'Segoe UI', sans-serif;
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    color: white;
+    padding: 0 15px;
+    border-radius: 22px;
 }
+
 .btn {
     width: 100px;
     height: 40px;
@@ -115,18 +119,20 @@ text-decoration: white;
 .content .para{
 padding-left: 28px;
 padding-bottom: 25px;
-font-family: Arial,;
+    font-family: "Gidole", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
 letter-spacing: 1.2px;
 line-height: 30px;
 
 }
 
 .content h1{
- padding-left: 20px;
+ padding-left: 1px;
  font-size: 50px;
  margin-top: 9%;
  letter-spacing: 1.2px;
- font-family: inter;
 }
 .content .cn{
     width: 160px;
@@ -220,11 +226,15 @@ font-family: sans-serif;
     margin-top: 8px;
     cursor: pointer;
     color: rgb(248, 246, 242);
+    text-decoration: none;
   }
+  .btnn a {text-decoration: none;
+font-size: 17px;
+}
   .btnn:hover{
 background-color: orange;
 color: rgb(236, 234, 231);
-
+text-decoration: none;
 }
 
 
@@ -239,4 +249,44 @@ color: rgb(236, 234, 231);
 .signup:hover {
     color: white; 
     text-decoration: underline; 
+}
+.form .link{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 17px;
+padding-top: 20px;
+text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ae2de0;
+}
+.liw{
+
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.icon a{
+text-decoration: none;
+color: white;
+
+}    
+.icon i{
+    
+    color: white;
+    font-size: 25px;
+    padding-left: 14px;
+    padding-top: 5px;
+}                    
+.icon i:hover{
+color: #db23bd;
 }
