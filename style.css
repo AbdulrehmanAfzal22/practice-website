@@ -20,21 +20,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
+    gap: 20px;
 }
 
-
-
-
 .icon {
-    width: 200px;
-    float: left;
-    height: 70px;
+    display: flex;
+    /* width: 200px;
+    float: left;         
+    height: 70px; */
+    align-items: center;
 }
 
 .logo {
- margin-top: 1px;
-   padding-left: -30px; color: rgb(255, 255, 255);
-   font-size: xx-large;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    margin-top: 10px;
+
 }
 
 
@@ -52,32 +55,34 @@ ul {
     align-items: center;
 }
 
-ul li{
-list-style: none;
-margin-left: 82px;
-margin-top: 33px;
-font-size: 15px;
+ul li {
+    list-style: none;
+    margin-left: 82px;
+    margin-top: 33px;
+    font-size: 15px;
 
 }
 
-ul li a{
-text-decoration: none;
-color: white;
-font-family: Arial,;
-font-weight: bold;
-transition: 0.4s ease;
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, ;
+    font-weight: bold;
+    transition: 0.4s ease;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: orange;
 }
-.search{
-width: 330px;
-float: left;
-  margin-left: 270px;
-  
 
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    padding-top: 12px;
 }
+
 .srch {
     background: transparent;
     font-family: 'Segoe UI', sans-serif;
@@ -102,6 +107,7 @@ float: left;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 0px;
 }
 
 .btn:hover {
@@ -109,39 +115,42 @@ float: left;
     color: black;
 }
 
-.content{
+.content {
     width: 1200px;
     height: auto;
     margin: auto;
     color: white;
     position: relative;
 }
-.content .para{
-padding-left: 28px;
-padding-bottom: 25px;
+
+.content .para {
+    padding-left: 28px;
+    padding-bottom: 25px;
     font-family: "Gidole", sans-serif;
     font-weight: 400;
     font-style: normal;
-  
-letter-spacing: 1.2px;
-line-height: 30px;
+
+    letter-spacing: 1.2px;
+    line-height: 30px;
 
 }
 
-.content h1{
- padding-left: 1px;
- font-size: 50px;
- margin-top: 9%;
- letter-spacing: 1.2px;
+.content h1 {
+    padding-left: 1px;
+    font-size: 50px;
+    margin-top: 9%;
+    letter-spacing: 1.2px;
 }
-.content .cn{
+
+.content .cn {
     width: 160px;
     height: 40px;
-background: rgb(3, 4, 5);
-border: none;
-margin-bottom: 10px;
-margin-left: 20px;
+    background: rgb(3, 4, 5);
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
+
 .ct {
     display: inline-block;
     text-decoration: none;
@@ -154,11 +163,12 @@ margin-left: 20px;
     box-shadow: 0 4px 8px rgba(103, 103, 189, 0.2);
     cursor: pointer;
     margin-top: 33px;
-    
- } 
-  .ct{
-color: white;
-  }
+
+}
+
+.ct {
+    color: white;
+}
 
 
 
@@ -167,29 +177,29 @@ color: white;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     background: linear-gradient(45deg, #FF5C5C, #FFC700);
 }
-  
-
-.form{
-width: 250px;
-height: 380px;
-background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-position: absolute;
-top: -20px;
-left: 870px;
-border-radius: 10px;
-padding: 25px;
-margin: 210px;
-color: white;
-  }
 
 
-  .form h2 {
+.form {
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 210px;
+    color: white;
+}
+
+
+.form h2 {
     width: 100%;
     font-family: Arial, sans-serif;
     text-align: center;
-    color: rgb(209, 25, 209); 
+    color: rgb(209, 25, 209);
     font-size: 20px;
-    background: rgb(255, 255, 255); 
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     margin-top: 5px;
     padding: 10px 0;
@@ -197,75 +207,84 @@ color: white;
 }
 
 
-  .form input{
-width: 240px;
-height: 35px;
-background: transparent;
-border-bottom: 1px solid royalblue;
-border-top: none;
-border-left: none;
-border-right: none;
-color: white;
-font-size: 15px;
-letter-spacing: 1px;
-margin-top: 30px;
-font-family: sans-serif;
-  }
-
-  .form input:focus{
-    outline: none;
-  }
-  ::placeholder{
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid royalblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     color: white;
-  }
-  .btnn{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.btnn {
     width: 240px;
     border-radius: 12px;
     height: 40px;
-    background:rgb(224, 220, 220) ;
+    background: rgb(224, 220, 220);
     margin-top: 8px;
     cursor: pointer;
     color: rgb(248, 246, 242);
     text-decoration: none;
-  }
-  .btnn a {text-decoration: none;
-font-size: 17px;
 }
-  .btnn:hover{
-background-color: orange;
-color: rgb(236, 234, 231);
-text-decoration: none;
+
+.btnn a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.btnn:hover {
+    background-color: orange;
+    color: rgb(236, 234, 231);
+    text-decoration: none;
 }
 
 
-  .signup {
-    color: rgb(245, 241, 234); 
-    text-decoration: none; 
-    font-weight: bold;      
+.signup {
+    color: rgb(245, 241, 234);
+    text-decoration: none;
+    font-weight: bold;
     transition: 0.3s;
     margin-bottom: 22px;
 }
 
 .signup:hover {
-    color: white; 
-    text-decoration: underline; 
+    color: white;
+    text-decoration: underline;
 }
-.form .link{
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 17px;
-padding-top: 20px;
-text-align: center;
+
+.form .link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
 }
-.form .link a{
+
+.form .link a {
     text-decoration: none;
     color: #ae2de0;
 }
-.liw{
+
+.liw {
 
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
 }
+
 .icon {
     display: flex;
     justify-content: center;
@@ -275,18 +294,20 @@ text-align: center;
     padding-left: 20px;
 }
 
-.icon a{
-text-decoration: none;
-color: white;
+.icon a {
+    text-decoration: none;
+    color: white;
 
-}    
-.icon i{
-    
+}
+
+.icon i {
+
     color: white;
     font-size: 25px;
     padding-left: 14px;
     padding-top: 5px;
-}                    
-.icon i:hover{
-color: #db23bd;
+}
+
+.icon i:hover {
+    color: #db23bd;
 }
